@@ -83,7 +83,7 @@ footer img {
     padding-right: 10px;
     gap: 20px;
     max-width: 60dvh;
-    max-height: 80dvh;
+    max-height: 70dvh;
     overflow: auto;
 }
 
@@ -119,7 +119,7 @@ footer img {
     & img {
 
         aspect-ratio: 1/1;
-        height: 95%;
+        height: 80%;
         border-radius: 16px;
     }
 }
