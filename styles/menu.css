@@ -20,19 +20,6 @@ footer img {
 
 
 
-.mobile {
-    display: none !important;
-}
-
-@media (width<1100px) {
-    .desktop {
-        display: flex !important;
-    }
-
-    .mobile {
-        display: flex !important;
-    }
-}
 
 
 
@@ -116,15 +103,15 @@ footer img {
     & span,
     p {
         text-wrap: pretty;
-        font-size: 2.4dvh;
-        line-height: 14px;
+        font-size: 2dvh;
+        line-height: 15px;
         padding-right: 5px;
         margin: 10px 0;
         color: #fff;
     }
 
     & span {
-        font-size: 2.7dvh;
+        font-size: 2.2dvh;
         color: #00c3ff;
         border-bottom: 1px solid #00c3ff;
     }
@@ -167,4 +154,19 @@ footer img {
 ::-webkit-scrollbar-thumb:hover {
     background: #65adff;
     /* Color más oscuro al pasar el mouse */
+}
+
+
+.mobile {
+    display: none !important;
+}
+
+@media (width<1100px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: flex !important;
+    }
 }
