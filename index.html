@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/global.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -54,11 +59,54 @@
     </header>
 
     <main>
-        <section>
-            <img src="./assets/hero.webp" alt="Imagen de presentacion del local">
+        <section  style="height: calc(100dvh - 56px); overflow: hidden;">
+            <img class="w-100 h-100 object-fit-cover" src="./assets/hero.webp" alt="Imagen de presentación del local">
         </section>
-        <section>
-            <!-- Cambiaria solo esto -->
+        <section class="container my-5">
+            <div class="">
+                <h2 class="text-center mb-5"> Un Espacio para Todos - Pool, Resto y Café</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>Sobre Nosotros</h3>
+                        <p>
+                            Bienvenidos a nuestro espacio de entretenimiento y relajación. Somos un lugar donde se combinan el buen ambiente, la comida de calidad y el gusto por el juego. Ofrecemos un área de <strong>pool</strong> profesional, perfecta para los amantes del billar que buscan un lugar donde disfrutar de una buena partida, ya sea en compañía de amigos o en un ambiente más competitivo.
+                        </p>
+                        <h3>Gastronomía y Café</h3>
+                        <p>
+                            Nuestro restaurante cuenta con un menú variado que satisface todos los gustos, desde deliciosos aperitivos hasta platos completos. Si eres amante del café, te invitamos a probar nuestras especialidades, preparadas con granos seleccionados que resaltan los mejores aromas y sabores.
+                        </p>
+                        <h3>Un Espacio para Compartir</h3>
+                        <p>
+                            Más que un lugar de entretenimiento, somos un punto de encuentro. Ya sea para una noche de diversión en la mesa de <strong>pool</strong>, una comida deliciosa o una charla amena en nuestra zona de café, en nuestro espacio todos pueden sentirse bienvenidos y disfrutar de una experiencia única.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./assets/img1.png" alt="Imagen del área de pool" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h2 class="text-center mb-5"> Un Espacio para Todos - Tragos </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./assets/img2.jpeg" alt="Imagen del área de pool" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Nuestra Filosofía</h3>
+                        <p>
+                            En nuestro establecimiento, creemos que cada visita debe ser memorable. Nuestro objetivo es crear un ambiente acogedor y amigable, donde cada cliente se sienta como en casa. Nos dedicamos a ofrecer un servicio excepcional y una experiencia que combine la diversión con la comodidad.
+                        </p>
+                       
+                        <h3>Compromiso con la Calidad</h3>
+                        <p>
+                            Nos enorgullecemos de utilizar solo ingredientes frescos y de la mejor calidad en nuestro menú. Nuestro equipo de cocina está comprometido con la excelencia, ofreciendo platillos que no solo son deliciosos, sino también presentados con cuidado. Cada comida es una celebración de sabores y aromas.
+                        </p>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+            
         </section>
     </main>
 
@@ -70,12 +118,12 @@
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+                <img class="w-25 object-fit-cover" src="./assets/logo.webp" alt="">
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#">
+                    <a class="text-body-secondary" href="https://www.instagram.com/capriccio.resto.pool/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
@@ -84,7 +132,7 @@
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#">
+                    <a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=100083055771114" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
@@ -93,7 +141,7 @@
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a class="text-body-secondary" href="#">
+                    <a class="text-body-secondary" href="https://wa.link/bq356a" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path
