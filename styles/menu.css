@@ -35,7 +35,10 @@ footer img {
 
 }
 
-
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 .section-hero-menu {
     height: calc(100dvh - 76px);
