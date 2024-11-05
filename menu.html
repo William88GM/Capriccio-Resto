@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
@@ -11,6 +15,8 @@
 </head>
 
 <body>
+
+
     <header class="container header-guille">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -68,23 +74,28 @@
             <img class=" hero-menu" src="./assets/hero-menu.webp" alt="Imagen de presentacion del local">
         </section>
         <section class="section-menu">
+            <h2>| Nuestro Menú |</h2>
             <!-- Cambiaria solo esto -->
             <div class="galeria-container desktop">
                 <div class="galeria-menu">
                     <div class="card-menu">
                         <div>
-                            <span>Pachata de la casa</span>
-                            <p>Pachata de carne de res con tomate, cebolla, pimiento, pepino, queso y salsa de
-                                tomate.
+                            <span>Ejemplo de otra cosa</span>
+                            <p>Otra descripcion
                             </p>
                         </div>
-                        <img src="./assets/pachata.webp" alt="Imagen de la pacha">
+                        <img src="./assets/sandwich.webp" alt="Imagen de la pacha">
 
                     </div>
                     <div class="card-menu">
                         <div class="card-menu-descripcion">
                             <span>Pachata de la casa</span>
                             <p>Pachata de carne de res con tomate, cebolla, pimiento, pepino, queso y salsa de
+                                tomate.
+                                <br />
+                                Pachata de carne de res con tomate, cebolla, pimiento, pepino, queso y salsa de
+                                tomate.
+                                Pachata de carne de res con tomate, cebolla, pimiento, pepino, queso y salsa de
                                 tomate.
                             </p>
                         </div>
@@ -286,9 +297,9 @@
 
     </main>
 
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
+    <div style="position: fixed;bottom: 0; width: 100dvw;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center border-top">
+            <div class=" d-flex align-items-center">
                 <img class="navbar-brand" src="./assets/logo.webp" alt="logo del local">
             </div>
 
@@ -323,6 +334,57 @@
             </ul>
         </footer>
     </div>
+
+    <div class="modal">
+        <img src="" alt="Imagen de la opcion">
+        <button id="closeModal">×</button>
+        <div class="modal-description">
+            <span></span>
+            <p></p>
+        </div>
+
+    </div>
+
+    <script>
+
+        function addListeners() {
+            let allCards = document.querySelectorAll('.card-menu')
+            allCards.forEach(card => {
+                card.addEventListener('click', showModal)
+            })
+
+            function hideModal() {
+                let modal = document.querySelector('.modal')
+                modal.style.display = "none"
+            }
+            let closeModal = document.getElementById('closeModal')
+            closeModal.addEventListener('click', hideModal)
+        }
+        addListeners()
+
+        function showModal(e) {
+
+            let modal = document.querySelector('.modal')
+            let target
+            if (e.target.parentElement.classList.contains('card-menu')) {
+                target = e.target.parentElement
+            } else if (e.target.parentElement.parentElement.classList.contains('card-menu')) {
+                target = e.target.parentElement.parentElement
+            }
+            console.log(target)
+
+            let span = target.querySelector('span')
+            let p = target.querySelector('p')
+
+            modal.querySelector('.modal-description span').innerHTML = span.innerHTML
+            modal.querySelector('.modal-description p').innerHTML = p.innerHTML
+
+            let img = target.querySelector('img')
+            modal.querySelector('img').src = img.src
+
+            modal.style.display = "flex"
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
