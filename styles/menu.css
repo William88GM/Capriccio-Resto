@@ -145,6 +145,7 @@ header {
 }
 
 .card-menu {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -246,16 +247,17 @@ header {
     justify-content: center;
     color: #fff;
     display: none;
-    width: 70dvh;
-    height: 70dvh;
+    width: 46dvh;
+    height: 46dvh;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-    background-color: #2f6690f2;
+    z-index: 20;
+    background-color: #357fb8f2;
+    box-shadow: 0 0 5px 5px #0030551e;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     overflow: hidden;
 
     & div {
@@ -266,8 +268,8 @@ header {
 
     & button {
         position: absolute;
-        top: -10px;
-        right: 10px;
+        top: -5px;
+        right: 15px;
         border: none;
         background-color: transparent;
         font-size: 40px;
@@ -289,7 +291,7 @@ header {
     & span {
         font-size: 2.2dvh;
         font-weight: bold;
-        color: #00c3ff;
+        color: #adfcff;
     }
 
     & p {

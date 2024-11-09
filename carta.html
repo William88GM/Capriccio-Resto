@@ -21,12 +21,11 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <img class="navbar-brand" src="./assets/logo.webp" alt="logo del local">
-                <button class="navbar-toggler" style="border: 2px solid #87c5ff; padding: 6px; border-radius: 10px;"
+                <button class="navbar-toggler" style="border: 2px solid #fff; padding: 6px; border-radius: 10px;"
                     type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 30 30"
-                        fill="#87c5ff">
-                        <path stroke="#87c5ff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 30 30" fill="#fff">
+                        <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
                             d="M4 7h22M4 15h22M4 23h22" />
                     </svg>
                 </button>
@@ -187,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <div class="galeria-container mobile">
+            <div class="galeria-container  mobile">
                 <div class="galeria-menu">
                     <div class="card-menu">
                         <div>
@@ -336,7 +335,9 @@
             </ul>
         </footer>
     </div>
-
+    <div id="modal-difuminado"
+        style="display: none; position: fixed;top: 0;left: 0; width: 100dvw; height: 100dvh; backdrop-filter: blur(5px); background-color: #00112380; z-index: 10;">
+    </div>
     <div class="modal">
         <img src="" alt="Imagen de la opcion">
         <button id="closeModal">×</button>
@@ -344,8 +345,8 @@
             <span></span>
             <p></p>
         </div>
-
     </div>
+
 
     <script>
 
@@ -357,7 +358,9 @@
 
             function hideModal() {
                 let modal = document.querySelector('.modal')
+                let difuminado = document.querySelector('#modal-difuminado')
                 modal.style.display = "none"
+                difuminado.style.display = "none"
             }
             let closeModal = document.getElementById('closeModal')
             closeModal.addEventListener('click', hideModal)
@@ -367,6 +370,7 @@
         function showModal(e) {
 
             let modal = document.querySelector('.modal')
+            let difuminado = document.querySelector('#modal-difuminado')
             let target
             if (e.target.parentElement.classList.contains('card-menu')) {
                 target = e.target.parentElement
@@ -385,6 +389,7 @@
             modal.querySelector('img').src = img.src
 
             modal.style.display = "flex"
+            difuminado.style.display = "block"
         }
     </script>
 
