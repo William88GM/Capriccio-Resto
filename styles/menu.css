@@ -132,7 +132,7 @@ header {
     margin: 0 20px;
     padding-right: 10px;
     gap: 20px;
-    max-width: 60dvh;
+    max-width: 44dvh;
     /* max-height: 70dvh; */
     /* overflow: auto; */
     height: auto;
@@ -142,7 +142,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60dvh;
+    width: 44dvh;
     height: 25dvh;
 
     & div {
@@ -330,4 +330,8 @@ header {
 ::-webkit-scrollbar-thumb:hover {
     background: #65adff;
     /* Color más oscuro al pasar el mouse */
+}
+
+.nav-link:hover {
+    color: #00c3ff !important;
 }
