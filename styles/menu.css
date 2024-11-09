@@ -90,7 +90,7 @@ header {
 
 .hero-menu {
     border: 15px solid #001324;
-    height: 100%;
+    height: calc(100dvh - 75px);
     width: 100%;
     object-fit: cover;
 }
@@ -109,13 +109,13 @@ header {
 
 
 .section-menu {
-    background-color: #003f88;
+    background-color: #D9DCD6;
     margin-bottom: 70px;
 
     & h2 {
         margin: auto;
         text-align: center;
-        color: #00c3ff;
+        color: #002555;
         padding-top: 30px;
 
         font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarel;
@@ -165,15 +165,15 @@ header {
         line-height: 15px;
         padding-right: 5px;
         margin: 10px 0;
-        color: #fff;
+        color: #000;
         font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarel;
     }
 
     & span {
         font-weight: bold;
         font-size: 2.2dvh;
-        color: #00c3ff;
-        border-bottom: 1px solid #00c3ff;
+        color: #002555 !important;
+        border-bottom: 1px solid #002555 !important;
     }
 
     & img {
@@ -253,7 +253,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    background-color: rgba(2, 0, 37, 0.911);
+    background-color: #2f6690f2;
     border-radius: 10px;
     padding: 20px;
     overflow: hidden;
