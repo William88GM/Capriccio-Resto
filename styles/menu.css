@@ -6,13 +6,17 @@
 }
 
 body {
-    background-color: #001f38;
+    background-color: #D9DCD6 !important;
+}
+
+nav {
+    background-color: #2f6690 !important;
 }
 
 body::-webkit-scrollbar {
-    width: 16px;
+    width: 12px;
     /* Ancho del scroll vertical */
-    height: 16px;
+    height: 12px;
     /* Alto del scroll horizontal */
 }
 
@@ -20,14 +24,14 @@ body::-webkit-scrollbar-track {
     background: #001f38;
 
     /* Color de fondo del track */
-    border-radius: 8px;
+    border-radius: 0px !important;
     /* Bordes redondeados */
 }
 
 /* Estiliza el "thumb", que es la parte que se desplaza */
 body::-webkit-scrollbar-thumb {
-    background: #3f99ff;
-    border: 4px solid #001f38;
+    background: #2f6690;
+    border: 3px solid #001f38;
     /* Color del thumb */
     border-radius: 8px;
     /* Bordes redondeados */
@@ -40,7 +44,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 footer {
-    background-color: #001f38;
+    background-color: #2f6690;
     color: #ffffff;
     padding: 15px 50px;
 }
@@ -62,7 +66,7 @@ header {
 .header-guille,
 .header-guille * {
 
-    background-color: #001f38 !important;
+    background-color: #2f6690 !important;
     color: #fff !important;
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarel;
 }
