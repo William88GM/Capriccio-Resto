@@ -89,16 +89,24 @@ header {
 }
 
 .hero-menu {
-    border: 15px solid #001324;
+    border: 10px solid #001324;
     height: calc(100dvh - 75px);
     width: 100%;
     object-fit: cover;
+}
+
+.section-main {
+    padding-top: 100px;
 }
 
 @media (width<800px) {
     .hero-menu {
         width: 100dvw;
         height: auto;
+    }
+
+    .section-main {
+        padding-top: 20px;
     }
 
     .section-hero-menu {
