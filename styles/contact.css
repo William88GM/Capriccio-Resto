@@ -1,20 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 .button-form {
-    background-color: #2f6690;
-    color: #fff;
+  background-color: #2f6690;
+  color: #fff;
 }
 
 .button-form:hover {
-    outline: 2px solid #002555;
-
+  outline: 2px solid #002555;
 }
 
 label {
-    color: #002555 !important;
+  color: #002555 !important;
+}
+
+main {
+  min-height: 100vh;
 }
